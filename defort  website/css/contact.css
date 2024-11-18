@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.5s ease-in;
+    scroll-behavior: smooth;
+    scroll-padding-top: 16vh;
+    /* scrolling up */
+
+}
+
+:root {
+    --main-color: #ffbd59;
+    --nav-color: #0e0a0aee;
+    --bg-color: #e8f3f1;
+    --black: #2f4858;
+    --card-color: #c0dbea;
+    --border: 0.1rem solid var(--card-color)
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* button side */
+.btn {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 0.8rem 2.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem;
+    background-color: #ffbd59;
+}
+
+
+.title {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 4.5rem;
+    font-size: 4rem;
+    text-shadow: 2px 2px 0 var(--nav-color);
+}
+
+.title span {
+    color: var(--nav-color);
+}
+
+
+/* contact us section */
+.contact .content {
+    display: flex;
+    background-color: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* height: 50rem; */
+}
+
+.contact .content iframe {
+    height: 50rem;
+    flex: 1 1 45%;
+    object-fit: cover;
+}
+
+.contact .content form {
+    height: 50rem;
+    flex: 1 1 45rem;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.contact .content form h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3.5rem;
+    padding: 1.5rem 0;
+}
+
+.contact .content form .input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: var(--border);
+}
+
+.contact .content form .input-box span {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+.contact .content form .input-box input {
+    background-color: var(--black);
+    text-transform: none;
+    color: #fff;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: var(--nav-color);
+    padding: 20px 0;
+    min-height: 100px;
+    padding: 20px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.display-icon,
+.links-menu {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+}
+
+.display-icon li,
+.links-menu li {
+    margin: 0 15px;
+}
+
+.display-icon a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.display-icon a:hover {
+    color: var(--main-color);
+    transform: translateY(-10px);
+}
+
+.links-menu a {
+    color: var(--main-color);
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid var(--main-color);
+    border-radius: 15px;
+    transform: scale(1) translateY(5px);
+    opacity: 0.7;
+    color: #fff;
+}
+
+
+
+.links-menu a:hover {
+    opacity: 1;
+    color: var(--main-color);
+    transform: scale(1) translateY(0);
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* scroll up */
+
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    color: white;
+
+    width: 20px;
+    height: 20px;
+    
+    text-align: center;
+    text-decoration: none;
+    color: var(--main-color); 
+    font-size: 3rem; 
+    animation: bounce 1.5s infinite; 
+}
+
+/* Define the bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0); 
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+
+.arrow:hover {
+    color: #007bff;
+    transform: translateY(-5px); 
+}
